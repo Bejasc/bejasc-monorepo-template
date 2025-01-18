@@ -17,14 +17,16 @@ A typical usecase for this template is to create a monorepo for a web applicatio
 
 ## Structure
 
+```
 .
-├── apps/ # Application projects, as required
-│ ├── client/ # Example client application
-│ └── api/ # Example server application
-├── packages/ # Shared packages/libraries
-│ ├── types/ # Types configuration, shared across all other projects
-├── pnpm-workspace.yaml # Workspace configuration
-└── package.json # Root package.json
+├── apps/                 # Application projects, as required
+│ ├── client/
+│ └── api/
+├── packages/             # Shared packages/libraries, as required
+│ ├── types/
+├── pnpm-workspace.yaml
+└── package.json          # Root package.json
+```
 
 ## Prerequisites
 
