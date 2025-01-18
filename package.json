@@ -1,5 +1,10 @@
 {
-	"name": "bejasc-monorepo-template",
+	"name": "monorepo-template",
+	"description": "A modern monorepo template with full TypeScript and linting support, streamlined apps/packages management, and shared configs and dependencies using pnpm.",
+	"author": {
+		"name": "Bejasc",
+		"url": "https://github.com/Bejasc"
+	},
 	"private": false,
 	"license": "MIT",
 	"devDependencies": {
@@ -37,5 +42,8 @@
 		"dotenv": "^16.4.7",
 		"nodemon": "^3.1.9",
 		"ts-node": "^10.9.2"
+	},
+	"engines": {
+		"node": ">=20"
 	}
 }
