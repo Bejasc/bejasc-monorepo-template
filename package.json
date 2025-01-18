@@ -1,0 +1,41 @@
+{
+	"name": "bejasc-monorepo-template",
+	"private": false,
+	"license": "MIT",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^8.18.1",
+		"@typescript-eslint/parser": "^8.18.1",
+		"autoprefixer": "^10.4.20",
+		"eslint": "^9.17.0",
+		"eslint-config-prettier": "^8.10.0",
+		"eslint-plugin-no-loops": "^0.4.0",
+		"eslint-plugin-promise": "^7.2.1",
+		"eslint-plugin-sonarjs": "^2.0.4",
+		"eslint-plugin-unicorn": "^55.0.0",
+		"eslint-plugin-vue": "^9.32.0",
+		"lint-staged": "^15.2.11",
+		"prettier": "^3.4.2",
+		"typescript": "^5.7.2"
+	},
+	"scripts": {
+		"dev": "pnpm run --parallel -r dev",
+		"build": "pnpm run --stream -r build",
+		"test": "pnpm run --stream -r test",
+		"lint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
+		"lint:fix": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix",
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+		"format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\""
+	},
+	"lint-staged": {
+		"*.ts": [
+			"eslint --cache --fix",
+			"prettier --write"
+		]
+	},
+	"dependencies": {
+		"@workspace/types": "workspace:^",
+		"dotenv": "^16.4.7",
+		"nodemon": "^3.1.9",
+		"ts-node": "^10.9.2"
+	}
+}

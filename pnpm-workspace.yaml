@@ -1,0 +1,15 @@
+packages:
+  # Include all packages in the 'packages' directory
+  - 'packages/*'
+  
+  # Include all packages in the 'apps' directory
+  - 'apps/*'
+  
+  # Include specific directories if needed
+  - 'libs/*'
+  - 'tools/*'
+  
+  # Exclude any directories you don't want to be part of the workspace
+  - '!**/test/**'
+  - '!**/tests/**'
+  - '!**/dist/**'
